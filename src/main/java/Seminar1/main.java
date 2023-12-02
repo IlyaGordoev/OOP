@@ -29,7 +29,7 @@ public class main {
 
         cat.liveCycle();
         dog.breathe();
-        System.out.println("-------------------");
+        System.out.println("-------------------\nHomework\n-------------------");
 
         fish.toGo();
         dog.fly();
