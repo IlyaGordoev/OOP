@@ -1,6 +1,7 @@
 package Seminar1;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Animal {
    private String name;
@@ -16,12 +17,6 @@ public class Animal {
       this.ownerName = ownerName;
       this.birthday = birthday;
    }
-   public Animal(Illness illness, String ownerName, LocalDate birthday) {
-      this.illness = illness;
-      this.ownerName = ownerName;
-      this.birthday = birthday;
-   }
-
    public void setName(String name) {
       this.name = name;
    }
@@ -54,7 +49,21 @@ public class Animal {
       play();
       sleep();
    }
-   public void brethe(){
-      System.out.println("brathe");
+   public void breathe(){
+      System.out.println("breathe");
+   }
+   public void toGo(){
+      if (getClass() == Fish.class) {
+         System.out.println(getClass().getSimpleName() + " don't walk");
+      }
+      else {
+         System.out.println(getClass().getSimpleName() + " to go");
+      }
+   }
+   public void fly(){
+      System.out.println(getClass().getSimpleName() + " to fly");
+   }
+   public void swim(){
+      System.out.println(getClass().getSimpleName() + " to swim");
    }
 }
