@@ -36,6 +36,5 @@ public class main {
         dog1.fly();
         cat.fly();
         duck.fly();
-
     }
 }

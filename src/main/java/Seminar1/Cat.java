@@ -14,6 +14,5 @@ public class Cat extends Animal{
     @Override
     public void fly() {
         System.out.println(getClass().getSimpleName() + " no fly");
-
     }
 }
